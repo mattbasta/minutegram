@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Minutegram</title>
+    <meta name="description" content="Pictures that take a minute">
+    <meta name="author" content="Matt Basta @mattbasta">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/camera.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="#">
+              Minutegram
+            </a>
+            <ul class="nav">
+              <li><a href="#picture">Take a Picture</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span9">
+          <canvas id="snapshot" width="500" height="500" style="display:none;"></canvas>
+          <video autoplay id="uservideo" width="500" height="500"></video>
+        </div>
+        <div class="span3">
+          <button id="take_picture" class="btn">Take Picture</button>
+          <button id="save_picture" class="btn btn-primary" style="display:none;">Save Picture</button>
+          <button id="cancel_picture" class="btn" style="display:none;">Discard</button>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; <a href="http://mattbasta.com/">Matt Basta</a> 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!--[if lt IE 7 ]>
+      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+  </body>
+</html>
